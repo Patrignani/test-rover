@@ -24,4 +24,6 @@ jobs:
         go mod vendor
 
     - name: Run tests
-      run: go test ./...
+      run: |
+        cd ./core
+        go test ./...
