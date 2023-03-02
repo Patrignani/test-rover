@@ -12,10 +12,10 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-
-   - name: Change directory
+      
+    - name: Change directory
       run: cd ./core
-
+      
     - name: Set up Go
       uses: actions/setup-go@v2
       with:
@@ -27,4 +27,3 @@ jobs:
 
     - name: Run tests
       run: go test ./...
-
